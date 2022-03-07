@@ -21,6 +21,10 @@ class SplashController: UIViewController {
         super.loadView()
         
         view = view_
+        
+        delay(1.5) {
+            print("Arama sayfasına yönlendir.")
+        }
     }
     
     // MARK: - Custom Methods
