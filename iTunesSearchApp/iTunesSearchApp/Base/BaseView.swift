@@ -18,6 +18,7 @@ class BaseView<P>: UIView {
         
         backgroundColor = .white
         self.delegate = delegate
+        hideKeyboard()
         loadView()
     }
     required init?(coder: NSCoder) {

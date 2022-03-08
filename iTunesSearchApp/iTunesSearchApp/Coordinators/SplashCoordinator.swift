@@ -26,5 +26,8 @@ class SplashCoordinator: Coordinator {
 
 // MARK: - Extension / Splash Flow Protocol
 extension SplashCoordinator: SplashFlow {
-    
+    func coordinateToSearch() {
+        let searchCoordinator = SearchCoordinator(navigationController: navigationController)
+        coordinate(to: searchCoordinator)
+    }
 }

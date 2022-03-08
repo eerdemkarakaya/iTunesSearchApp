@@ -10,4 +10,7 @@ import UIKit
 
 extension UIImage {
     static let itunesLogo = UIImage(named: "itunesLogo")
+    static let search = UIImage(named: "search")
+    static let searchWaiting = UIImage(named: "searchWaiting")
+    static let searchNotFound = UIImage(named: "searchNotFound")
 }

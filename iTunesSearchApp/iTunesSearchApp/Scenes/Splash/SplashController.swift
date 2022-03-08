@@ -22,8 +22,8 @@ class SplashController: UIViewController {
         
         view = view_
         
-        delay(1.5) {
-            print("Arama sayfasına yönlendir.")
+        delay(1) {
+            self.coordinator?.coordinateToSearch()
         }
     }
     

@@ -31,6 +31,18 @@
 		E87BA93A27D6C39200781C0C /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87BA93927D6C39200781C0C /* UIImage+.swift */; };
 		E87BA93C27D6C95100781C0C /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87BA93B27D6C95100781C0C /* NSObject+.swift */; };
 		E87BA93E27D6CB7800781C0C /* UIActivityIndicator+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87BA93D27D6CB7800781C0C /* UIActivityIndicator+.swift */; };
+		E87BA94127D6CD2200781C0C /* ISearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87BA94027D6CD2200781C0C /* ISearchView.swift */; };
+		E87BA94327D6CD3500781C0C /* ISearchFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87BA94227D6CD3500781C0C /* ISearchFlow.swift */; };
+		E87BA94527D6CD4900781C0C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87BA94427D6CD4900781C0C /* SearchView.swift */; };
+		E87BA94727D6CDAF00781C0C /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87BA94627D6CDAF00781C0C /* SearchController.swift */; };
+		E87BA94927D6CDDB00781C0C /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87BA94827D6CDDB00781C0C /* SearchViewModel.swift */; };
+		E87BA94B27D6CDFF00781C0C /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87BA94A27D6CDFF00781C0C /* SearchCoordinator.swift */; };
+		E87BA94D27D6CF4800781C0C /* UINavigationController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87BA94C27D6CF4800781C0C /* UINavigationController+.swift */; };
+		E87BA95027D6D83800781C0C /* SearchTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87BA94F27D6D83800781C0C /* SearchTextfield.swift */; };
+		E87BA95227D6E36900781C0C /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87BA95127D6E36900781C0C /* UIView+Animation.swift */; };
+		E87BA95427D6E6EC00781C0C /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87BA95327D6E6EC00781C0C /* InformationView.swift */; };
+		E87BA95627D7E55300781C0C /* UITableView+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87BA95527D7E55300781C0C /* UITableView+Init.swift */; };
+		E87BA95827D7E75600781C0C /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87BA95727D7E75600781C0C /* UITableView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +72,18 @@
 		E87BA93927D6C39200781C0C /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		E87BA93B27D6C95100781C0C /* NSObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
 		E87BA93D27D6CB7800781C0C /* UIActivityIndicator+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicator+.swift"; sourceTree = "<group>"; };
+		E87BA94027D6CD2200781C0C /* ISearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISearchView.swift; sourceTree = "<group>"; };
+		E87BA94227D6CD3500781C0C /* ISearchFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISearchFlow.swift; sourceTree = "<group>"; };
+		E87BA94427D6CD4900781C0C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		E87BA94627D6CDAF00781C0C /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		E87BA94827D6CDDB00781C0C /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		E87BA94A27D6CDFF00781C0C /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		E87BA94C27D6CF4800781C0C /* UINavigationController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+.swift"; sourceTree = "<group>"; };
+		E87BA94F27D6D83800781C0C /* SearchTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextfield.swift; sourceTree = "<group>"; };
+		E87BA95127D6E36900781C0C /* UIView+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animation.swift"; sourceTree = "<group>"; };
+		E87BA95327D6E6EC00781C0C /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		E87BA95527D7E55300781C0C /* UITableView+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Init.swift"; sourceTree = "<group>"; };
+		E87BA95727D7E75600781C0C /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +124,7 @@
 				E87BA92B27D6BFE400781C0C /* Helpers */,
 				E87BA93027D6C15900781C0C /* Enums */,
 				E87BA91727D6BBA700781C0C /* Extensions */,
+				E87BA94E27D6D81B00781C0C /* SubClasses */,
 				E87BA90427D6BB2A00781C0C /* Supporting Files */,
 			);
 			path = iTunesSearchApp;
@@ -122,6 +147,7 @@
 			children = (
 				E87BA90927D6BBA700781C0C /* AppCoordinator.swift */,
 				E87BA90A27D6BBA700781C0C /* SplashCoordinator.swift */,
+				E87BA94A27D6CDFF00781C0C /* SearchCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -137,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				E87BA90D27D6BBA700781C0C /* Splash */,
+				E87BA93F27D6CD0D00781C0C /* Search */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -144,9 +171,9 @@
 		E87BA90D27D6BBA700781C0C /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				E87BA90E27D6BBA700781C0C /* SplashViewModel.swift */,
 				E87BA90F27D6BBA700781C0C /* SplashView.swift */,
 				E87BA91027D6BBA700781C0C /* SplashController.swift */,
+				E87BA90E27D6BBA700781C0C /* SplashViewModel.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -177,6 +204,8 @@
 				E87BA93927D6C39200781C0C /* UIImage+.swift */,
 				E87BA93B27D6C95100781C0C /* NSObject+.swift */,
 				E87BA93D27D6CB7800781C0C /* UIActivityIndicator+.swift */,
+				E87BA94C27D6CF4800781C0C /* UINavigationController+.swift */,
+				E87BA95727D7E75600781C0C /* UITableView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -186,6 +215,7 @@
 			children = (
 				E87BA91927D6BBA700781C0C /* UIView+.swift */,
 				E87BA91A27D6BBA700781C0C /* UIView+Layout.swift */,
+				E87BA95127D6E36900781C0C /* UIView+Animation.swift */,
 			);
 			name = UIView;
 			sourceTree = "<group>";
@@ -195,6 +225,7 @@
 			children = (
 				E87BA91227D6BBA700781C0C /* ICoordinator.swift */,
 				E87BA91427D6BBA700781C0C /* ISplashFlow.swift */,
+				E87BA94227D6CD3500781C0C /* ISearchFlow.swift */,
 			);
 			name = Coordinator;
 			sourceTree = "<group>";
@@ -203,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				E87BA91327D6BBA700781C0C /* ISplashView.swift */,
+				E87BA94027D6CD2200781C0C /* ISearchView.swift */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -212,6 +244,7 @@
 			children = (
 				E87BA92E27D6C08E00781C0C /* UILabel+Init.swift */,
 				E87BA93527D6C29F00781C0C /* UIImageView+Init.swift */,
+				E87BA95527D7E55300781C0C /* UITableView+Init.swift */,
 			);
 			name = "Convenience Init";
 			sourceTree = "<group>";
@@ -231,6 +264,25 @@
 				E87BA93327D6C23B00781C0C /* FontSize.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		E87BA93F27D6CD0D00781C0C /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				E87BA94427D6CD4900781C0C /* SearchView.swift */,
+				E87BA94627D6CDAF00781C0C /* SearchController.swift */,
+				E87BA94827D6CDDB00781C0C /* SearchViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		E87BA94E27D6D81B00781C0C /* SubClasses */ = {
+			isa = PBXGroup;
+			children = (
+				E87BA94F27D6D83800781C0C /* SearchTextfield.swift */,
+				E87BA95327D6E6EC00781C0C /* InformationView.swift */,
+			);
+			path = SubClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,25 +356,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				E87BA92227D6BBA700781C0C /* ISplashFlow.swift in Sources */,
+				E87BA95627D7E55300781C0C /* UITableView+Init.swift in Sources */,
 				E87BA93427D6C23B00781C0C /* FontSize.swift in Sources */,
 				E87BA91D27D6BBA700781C0C /* SplashViewModel.swift in Sources */,
+				E87BA94727D6CDAF00781C0C /* SearchController.swift in Sources */,
 				E87BA91B27D6BBA700781C0C /* AppCoordinator.swift in Sources */,
 				E87BA93E27D6CB7800781C0C /* UIActivityIndicator+.swift in Sources */,
 				E87BA93C27D6C95100781C0C /* NSObject+.swift in Sources */,
 				E87BA93627D6C29F00781C0C /* UIImageView+Init.swift in Sources */,
+				E87BA94D27D6CF4800781C0C /* UINavigationController+.swift in Sources */,
 				E87BA92127D6BBA700781C0C /* ISplashView.swift in Sources */,
+				E87BA95827D7E75600781C0C /* UITableView+.swift in Sources */,
 				E87BA92427D6BBA700781C0C /* Coordinator+.swift in Sources */,
+				E87BA95027D6D83800781C0C /* SearchTextfield.swift in Sources */,
 				E87BA92027D6BBA700781C0C /* ICoordinator.swift in Sources */,
 				E87BA91C27D6BBA700781C0C /* SplashCoordinator.swift in Sources */,
+				E87BA94327D6CD3500781C0C /* ISearchFlow.swift in Sources */,
 				E87BA8F127D6BAD400781C0C /* AppDelegate.swift in Sources */,
 				E87BA92D27D6BFEF00781C0C /* Globals.swift in Sources */,
+				E87BA95427D6E6EC00781C0C /* InformationView.swift in Sources */,
 				E87BA8F327D6BAD400781C0C /* SceneDelegate.swift in Sources */,
+				E87BA94527D6CD4900781C0C /* SearchView.swift in Sources */,
+				E87BA94127D6CD2200781C0C /* ISearchView.swift in Sources */,
 				E87BA92F27D6C08E00781C0C /* UILabel+Init.swift in Sources */,
 				E87BA91F27D6BBA700781C0C /* SplashController.swift in Sources */,
+				E87BA94B27D6CDFF00781C0C /* SearchCoordinator.swift in Sources */,
 				E87BA93227D6C16800781C0C /* Font.swift in Sources */,
 				E87BA92527D6BBA700781C0C /* UIView+.swift in Sources */,
 				E87BA92327D6BBA700781C0C /* BaseView.swift in Sources */,
+				E87BA95227D6E36900781C0C /* UIView+Animation.swift in Sources */,
 				E87BA93A27D6C39200781C0C /* UIImage+.swift in Sources */,
+				E87BA94927D6CDDB00781C0C /* SearchViewModel.swift in Sources */,
 				E87BA92627D6BBA700781C0C /* UIView+Layout.swift in Sources */,
 				E87BA91E27D6BBA700781C0C /* SplashView.swift in Sources */,
 			);
@@ -467,7 +531,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H2XVNP2779;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iTunesSearchApp/Info.plist;
+				INFOPLIST_FILE = "iTunesSearchApp/Supporting Files/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "iTunes Search";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -495,9 +559,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KN6MCZ7V32;
+				DEVELOPMENT_TEAM = H2XVNP2779;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iTunesSearchApp/Info.plist;
+				INFOPLIST_FILE = "iTunesSearchApp/Supporting Files/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "iTunes Search";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
