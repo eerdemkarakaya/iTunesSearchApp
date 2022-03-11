@@ -8,5 +8,6 @@
 import Foundation
 
 protocol SearchViewProtocol: AnyObject {
-    
+    func searchTapped(pageNumber: Int, limit: Int, searchString: String)
+    func itemSelected(_ id: String)
 }

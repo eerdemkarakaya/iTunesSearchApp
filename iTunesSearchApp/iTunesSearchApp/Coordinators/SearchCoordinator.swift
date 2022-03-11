@@ -28,5 +28,8 @@ class SearchCoordinator: Coordinator {
 
 // MARK: - Extension / Search Flow Protocol
 extension SearchCoordinator: SearchFlow {
-    
+    func coordinateToDetail(id: String) {
+        let detailCoordinator = DetailCoordinator(navigationController: navigationController, id: id)
+        coordinate(to: detailCoordinator)
+    }
 }

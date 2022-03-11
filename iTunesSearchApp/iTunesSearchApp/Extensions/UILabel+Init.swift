@@ -15,6 +15,7 @@ extension UILabel {
                      textColor: UIColor = .black,
                      alignment: NSTextAlignment = .left) {
         self.init(frame: .zero)
+        translatesAutoresizingMaskIntoConstraints = false
         
         self.text = text
         self.textColor = textColor

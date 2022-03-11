@@ -12,6 +12,7 @@ extension UIImageView {
                      contentMode: ContentMode = .scaleAspectFit,
                      tintColor: UIColor? = nil) {
         self.init(frame: .zero)
+        translatesAutoresizingMaskIntoConstraints = false
         
         self.contentMode = contentMode
         

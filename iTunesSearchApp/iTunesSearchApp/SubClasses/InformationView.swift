@@ -38,8 +38,11 @@ class InformationView: UIView {
             .bottomTo(infoLabel.bottomAnchor, value: -12)
             .leadingTo(leadingAnchor)
             .trailingTo(trailingAnchor)
-        
     }
     
-    // MARK: - Custom Methods
+    // MARK: - Setter Methods
+    func setInformation(image: UIImage, description: String) {
+        self.infoImageView.image = image
+        self.infoLabel.text = description
+    }
 }
