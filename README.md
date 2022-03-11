@@ -5,7 +5,7 @@ Bu repo [iTunesSearchAPI](https://developer.apple.com/library/archive/documentat
 
 ## Uygulama İçi Görseller
 
-![Sample Picture](https://github.com/eerdemkarakaya/iTunesSearchApp/scenes.png)
+![Sample Picture](https://github.com/eerdemkarakaya/iTunesSearchApp/blob/main/scenes.png)
 
 ## Installation
 
