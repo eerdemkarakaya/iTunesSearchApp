@@ -25,7 +25,9 @@ class API: SearchService, DetailService {
     
     // MARK: - Detail Service Methods
     func getDetail(id: String, completion: @escaping (DetailModel.Response?) -> Void) {
-        let parameters: [String: Any] = ["id": id, "country": "tr"]
+        let parameters: [String: Any] = ["id": id,
+                                         "lang": "tr",
+                                         "country": "tr" ]
         AF.request(Endpoint.detail.url, parameters: parameters).validate().responseDecodable(of: DetailModel.Response.self) { response in
             completion(response.value)
         }
