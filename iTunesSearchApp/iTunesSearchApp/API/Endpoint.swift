@@ -9,6 +9,7 @@ import Foundation
 
 enum Endpoint: String {
     case search = "search?"
+    case detail = "lookup?"
     
     var url: String {
         let baseURL = "https://itunes.apple.com/"

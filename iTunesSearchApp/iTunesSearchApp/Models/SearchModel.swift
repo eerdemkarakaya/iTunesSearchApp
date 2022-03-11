@@ -7,24 +7,6 @@
 
 import Foundation
 
-enum SearchSection: String {
-    case song           = "song"
-    case podcast        = "podcast"
-    case feature_movie  = "feature-movie"
-    case tv_episode     = "tv-episode"
-    case music_video    = "music-video"
-    
-    func getTitle() -> String {
-        switch self {
-        case .song          : return "Şarkı"
-        case .podcast       : return "Ses Dosyası"
-        case .feature_movie : return "Uzun Metrajlı Film"
-        case .tv_episode    : return "TV Bölümü"
-        case .music_video   : return "Videolu Müzik"
-        }
-    }
-}
-
 struct SearchModel: Codable {
     struct Response: Decodable {
         let resultCount: Int
@@ -42,10 +24,10 @@ struct SearchModel: Codable {
                         artworkUrl60,
                         artworkUrl100,
                         country,
-                        releaseDate,
                         currency: String
             
-            private let artistViewUrl,
+            private let releaseDate,
+                        artistViewUrl,
                         collectionName,
                         primaryGenreName: String?
             private let collectionPrice: Double?
@@ -91,7 +73,7 @@ struct SearchModel: Codable {
                 return MovieCardModel(id: "\(trackId ?? 0)",
                                       movieName: trackName ?? "?name?",
                                       movieCategory: primaryGenreName ?? "?genre?",
-                                      movieDate: releaseDate,
+                                      movieDate: releaseDate ?? "",
                                       imageURL: artworkUrl100)
             }
         }

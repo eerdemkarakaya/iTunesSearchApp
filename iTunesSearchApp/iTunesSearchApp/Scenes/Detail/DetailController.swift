@@ -27,9 +27,21 @@ class DetailController: UIViewController {
     }
     
     // MARK: - Life Cycle Methods
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        getDetails()
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
+    // MARK: - Custom Methods
+    func getDetails() {
+        viewModel.getDetailsFromService()
+        viewModel.notifyDetailResponse = { [self] in
+            view_.updateView(viewModel.getDetailResponse().getResult())
+        }
     }
 }
 

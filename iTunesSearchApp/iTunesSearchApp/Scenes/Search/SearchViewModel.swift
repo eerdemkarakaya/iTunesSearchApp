@@ -17,7 +17,7 @@ class SearchViewModel: NSObject {
     
     // MARK: - Service Methods
     func search(pageNumber: Int, limit: Int = 25, searchString: String) {
-        API.shared.search(searchString: searchString, limit: limit, page: pageNumber) { rm in
+        API.shared.search(searchString: searchString, limit: limit, page: (pageNumber * 25)) { rm in
             guard let rm = rm else { return }
             self.searchResponseModel = rm
             self.notifySearchResult()                        
@@ -27,7 +27,6 @@ class SearchViewModel: NSObject {
     // MARK: - Getter & Setter Methods
     func getSearchResults() -> [String: [SearchModel.Response.SearchGeneralModel]] {
         var groupByWrapperType = Dictionary(grouping: searchResponseModel!.results, by: { $0.getStringValue(typeOf: .wrapperType) }) // Örnek: -> track, audibook ...
-                
         if let tracks = groupByWrapperType["track"] { // WrapperType track içeriyorsa eğer track grubunu kind türüne göre grupluyor ve eski track grubununu siliyor. Örnek: -> audibook, song, tv-episode (track silindi) ...
             var groupedTracks = Dictionary(grouping: tracks, by: { $0.getStringValue(typeOf: .kind) })
             groupByWrapperType.removeValue(forKey: "track")

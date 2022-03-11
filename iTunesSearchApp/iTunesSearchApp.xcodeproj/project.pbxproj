@@ -21,6 +21,9 @@
 		E821052A27DAD797004BD818 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E821052927DAD797004BD818 /* DetailViewModel.swift */; };
 		E821052C27DAD7B1004BD818 /* IDetailFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E821052B27DAD7B1004BD818 /* IDetailFlow.swift */; };
 		E821052E27DAD816004BD818 /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E821052D27DAD816004BD818 /* DetailCoordinator.swift */; };
+		E821053427DB8071004BD818 /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E821053327DB8071004BD818 /* DetailModel.swift */; };
+		E821053627DC03B5004BD818 /* SearchSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E821053527DC03B5004BD818 /* SearchSection.swift */; };
+		E821053827DC03E6004BD818 /* IDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E821053727DC03E6004BD818 /* IDetailService.swift */; };
 		E87BA8F127D6BAD400781C0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87BA8F027D6BAD400781C0C /* AppDelegate.swift */; };
 		E87BA8F327D6BAD400781C0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87BA8F227D6BAD400781C0C /* SceneDelegate.swift */; };
 		E87BA8FA27D6BAD600781C0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E87BA8F927D6BAD600781C0C /* Assets.xcassets */; };
@@ -81,6 +84,9 @@
 		E821052927DAD797004BD818 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		E821052B27DAD7B1004BD818 /* IDetailFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDetailFlow.swift; sourceTree = "<group>"; };
 		E821052D27DAD816004BD818 /* DetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
+		E821053327DB8071004BD818 /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
+		E821053527DC03B5004BD818 /* SearchSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSection.swift; sourceTree = "<group>"; };
+		E821053727DC03E6004BD818 /* IDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDetailService.swift; sourceTree = "<group>"; };
 		E87BA8ED27D6BAD400781C0C /* iTunesSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E87BA8F027D6BAD400781C0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E87BA8F227D6BAD400781C0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -230,6 +236,7 @@
 				E87BA97527D81C7200781C0C /* SearchModel.swift */,
 				E821051827DA886D004BD818 /* SongCardModel.swift */,
 				E821051C27DA91F5004BD818 /* MovieCardModel.swift */,
+				E821053327DB8071004BD818 /* DetailModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -345,6 +352,7 @@
 				E87BA93127D6C16800781C0C /* Font.swift */,
 				E87BA93327D6C23B00781C0C /* FontSize.swift */,
 				E821051E27DAD1CC004BD818 /* DateFormat.swift */,
+				E821053527DC03B5004BD818 /* SearchSection.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -383,6 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				E87BA97127D81AAA00781C0C /* ISearchService.swift */,
+				E821053727DC03E6004BD818 /* IDetailService.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -501,6 +510,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E821053827DC03E6004BD818 /* IDetailService.swift in Sources */,
 				E87BA97627D81C7200781C0C /* SearchModel.swift in Sources */,
 				E87BA92227D6BBA700781C0C /* ISplashFlow.swift in Sources */,
 				E87BA95627D7E55300781C0C /* UITableView+Init.swift in Sources */,
@@ -525,6 +535,7 @@
 				E87BA92427D6BBA700781C0C /* Coordinator+.swift in Sources */,
 				E87BA95027D6D83800781C0C /* SearchTextfield.swift in Sources */,
 				E87BA92027D6BBA700781C0C /* ICoordinator.swift in Sources */,
+				E821053427DB8071004BD818 /* DetailModel.swift in Sources */,
 				E87BA97227D81AAA00781C0C /* ISearchService.swift in Sources */,
 				E87BA91C27D6BBA700781C0C /* SplashCoordinator.swift in Sources */,
 				E821052127DAD378004BD818 /* Date+.swift in Sources */,
@@ -541,6 +552,7 @@
 				E87BA97427D81ABF00781C0C /* String+.swift in Sources */,
 				E87BA94127D6CD2200781C0C /* ISearchView.swift in Sources */,
 				E821052627DAD727004BD818 /* IDetailView.swift in Sources */,
+				E821053627DC03B5004BD818 /* SearchSection.swift in Sources */,
 				E87BA92F27D6C08E00781C0C /* UILabel+Init.swift in Sources */,
 				E87BA91F27D6BBA700781C0C /* SplashController.swift in Sources */,
 				E87BA94B27D6CDFF00781C0C /* SearchCoordinator.swift in Sources */,

@@ -24,7 +24,7 @@ class SearchView: BaseView<SearchViewProtocol> {
     override func loadView() {
         super.loadView()
         
-        checkSearchBar()
+        checkSearchBarChanges()
         searchTableView.alpha = 0
         searchTableView.register(SongCardCell.self, forCellReuseIdentifier: "SongCell")
         searchTableView.register(MovieCardCell.self, forCellReuseIdentifier: "MovieCardCell")
@@ -70,14 +70,29 @@ class SearchView: BaseView<SearchViewProtocol> {
         let bottomOffset = CGPoint(x: 0, y: searchTableView.contentSize.height - searchTableView.bounds.size.height)
         searchTableView.contentOffset.y = isStartBottom ? bottomOffset.y : 0
         isStartBottom = false
-        
+
         UIView.animate(withDuration: 0.5) {
             self.searchTableView.alpha = 1
         }
     }
     
+    // MARK: - Getter Methods
+    func getHeaderCount() -> Int {
+        return searchResults.keys.count
+    }
+    func getHeader(_ section: Int) -> String {
+        return Array(searchResults.keys)[section]
+    }
+    
+    func getRowCount(_ section: Int) -> Int {
+        return Array(searchResults.values)[section].count
+    }
+    func getRowItems(_ section: Int) -> [SearchModel.Response.SearchGeneralModel] {
+        return Array(searchResults.values)[section]
+    }
+    
     // MARK: - Custom Methods
-    private func checkSearchBar() {
+    private func checkSearchBarChanges() {
         searchTextfield.textUpdateFinished = { [self] searchString in
             pageNumber = 0
             let isCanSearch = searchString != ""
@@ -87,11 +102,7 @@ class SearchView: BaseView<SearchViewProtocol> {
         }
     }
     private func getDictionaryCount() -> Int {
-        var count = 0
-        self.searchResults.keys.forEach { key in
-            count += self.searchResults[key]!.count
-        }
-        return count
+        return self.searchResults.values.flatMap({ $0.count }).reduce(0, +)
     }
     
     private func setViewForDataNotFound() {
@@ -140,11 +151,11 @@ class SearchView: BaseView<SearchViewProtocol> {
 extension SearchView: UITableViewDelegate, UITableViewDataSource {
     // FOR HEADER
     func numberOfSections(in tableView: UITableView) -> Int {
-        return searchResults.keys.count
+        return getHeaderCount()
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let sortedKeys = searchResults.keys.sorted()
-        let title = SearchSection(rawValue: Array(sortedKeys)[section])?.getTitle() ?? "-"
+        let header = getHeader(section)
+        let title = SearchSection(rawValue: header)?.getTitle() ?? header
         
         lazy var headerView = UIView()
         lazy var titleLabel = UILabel(text: title, size: .title3, numberOfLines: 0, fontType: .bold, textColor: .black)
@@ -160,11 +171,11 @@ extension SearchView: UITableViewDelegate, UITableViewDataSource {
     }
     // FOR CELL
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Array(searchResults.values)[section].count
+        return getRowCount(section)
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let section = Array(searchResults.keys.sorted())[indexPath.section]
-        let item = Array(searchResults.values)[indexPath.section][indexPath.row]
+        let section = getHeader(indexPath.section)
+        let item = getRowItems(indexPath.section)[indexPath.row]
                 
         if section == "song" || section == "podcast" {
             let cell = tableView.dequeueReusableCell(withIdentifier: "SongCell") as! SongCardCell
